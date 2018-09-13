@@ -6,7 +6,9 @@ function setup(){
 
 function draw(){
 	for(var i=0; i<mouseclicks.length; i++){
-		ellipse(mouseclicks[i].x,mouseclicks[i].y,10)
+		ellipse(mouseclicks[i].x,mouseclicks[i].y,10);
+		mouseclicks[i].x++;
+		mouseclicks[i].y++;
 	}
 }
 
