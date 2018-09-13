@@ -1,5 +1,9 @@
+var mysound;
+
 function setup(){
-	createCanvas(720,480)
+	createCanvas(720,480);
+	mysound = createAudio("TT.mp3"); //to make it work upload to webspace
+
 }
 
 function draw(){
@@ -14,5 +18,6 @@ function mouseClicked(){
 	var clickeddistance = dist(width/2, height/2, mouseX, mouseY);
 	if(clickeddistance < 15){
 		fill(100)
+		mysound.play();
 	}
 }
